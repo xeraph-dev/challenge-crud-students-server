@@ -1,0 +1,30 @@
+@api = http://localhost:8443
+@users = {{api}}/users
+
+GET {{users}}
+
+###
+GET {{users}}/60d76455a3d1cd2dfcf0bf80
+
+###
+POST {{users}}
+Content-Type: application/json
+
+{
+  "firstName": "adrian",
+  "lastName": "lopez",
+  "email":"adrian@gmail.com",
+  "age":21,
+  "grade":5
+}
+
+###
+PUT {{users}}/60d77183becbe35050f735dd
+Content-Type: application/json
+
+{
+  "firstName": "Rene"
+}
+
+###
+DELETE {{users}}/60d75edecf80392fe4d59141
